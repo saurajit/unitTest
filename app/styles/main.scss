@@ -10,8 +10,8 @@
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  margin: 0 auto;
+  width: 960px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -68,10 +68,6 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-
     /* Remove the padding we set earlier */
     .header,
     .marketing,
