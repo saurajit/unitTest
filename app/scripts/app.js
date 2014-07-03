@@ -13,6 +13,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/google-search', {
+        templateUrl: 'views/google-search.html',
+        controller: 'GoogleSearchCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

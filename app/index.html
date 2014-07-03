@@ -29,8 +29,7 @@
         <nav class="top-bar top-bar-section" data-topbar>
             <ul class="left show-for-large-up">
                 <li class="active"><a ng-href="#">Home</a></li>
-                <li><a ng-href="#">About</a></li>
-                <li><a ng-href="#">Contact</a></li>
+                <li><a ng-href="#/google-search">Google Search</a></li>
             </ul>
         </nav>
         <h3 class="text-muted">AngularJS Unit Testing with Karma</h3>
@@ -69,7 +68,6 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-foundation/mm-foundation-tpls.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
     <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
@@ -80,6 +78,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/googlesearch.js"></script>
+        <script src="scripts/controllers/google-search.js"></script>
         <!-- endbuild -->
 </body>
 </html>
