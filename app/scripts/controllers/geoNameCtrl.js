@@ -8,14 +8,16 @@
  * Controller of the unittestApp
  */
 angular.module('unittestApp')
-  .controller('GoogleSearchCtrl', ['$scope', 'googleSearch', function ($scope, googleSearch) {
+  .controller('geoNameSearchCtrl', ['$scope', 'geoNameService', function ($scope, geoNameService) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $scope.searchGoogle = function () {
-      googleSearch.query('angular testing');
+    $scope.searchGeoname = function () {
+      geoNameService.countryInfo();
     };
+
+    $scope.searchGeoname();
   }]);

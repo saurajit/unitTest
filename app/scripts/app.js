@@ -13,9 +13,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/google-search', {
-        templateUrl: 'views/google-search.html',
-        controller: 'GoogleSearchCtrl'
+      .when('/geoname', {
+        templateUrl: 'views/geoname.html',
+        controller: 'geoNameSearchCtrl'
       })
       .otherwise({
         redirectTo: '/'
