@@ -10,7 +10,7 @@
 angular.module('unittestApp')
   .factory('geoNameService', ['$http', function ($http) {
 
-    var _API_USERNAME = 'demo'; //Use the 'username' by creating an account at http://www.geonames.org/login
+    var _API_USERNAME = 'gumnam'; //Use the 'username' by creating an account at http://www.geonames.org/login
 
     var countryInfo = 'http://api.geonames.org/countryInfoJSON',
       earthquakes = 'http://api.geonames.org/earthquakesJSON';

@@ -21,17 +21,17 @@ angular.module('unittestApp')
 
     $scope.searchGeoname = function () {
       $scope.allCountries = [];
-      angular.element('select option[value=""]').html("Loading...");
+      angular.element('select option[value=""]').html('Loading...');
       geoNameService.countryInfo()
         .success(function (response, status) {
           if(status === 200) {
             $scope.allCountries = response.geonames;
-            angular.element('select option[value=""]').html("Select a country");
+            angular.element('select option[value=""]').html('Select a country');
           }
         })
         .error(function () {
           $scope.allCountries = [];
-          angular.element('select option[value=""]').html("Error loading country list..");
+          angular.element('select option[value=""]').html('Error loading country list..');
         });
     };
 
