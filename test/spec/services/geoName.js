@@ -6,13 +6,13 @@ describe('Service: googleSearch', function () {
   beforeEach(module('unittestApp'));
 
   // instantiate service
-  var googleSearch;
-  beforeEach(inject(function (_googleSearch_) {
-    googleSearch = _googleSearch_;
+  var geoNameService;
+  beforeEach(inject(function (_geoNameService_) {
+    geoNameService = _geoNameService_;
   }));
 
   it('should do something', function () {
-    expect(!!googleSearch).toBe(true);
+    expect(!!geoNameService).toBe(true);
   });
 
 });
