@@ -1,6 +1,31 @@
-<p>This is the google-search view.</p>
-<div class="panel radius">
-    <ul>
-        <li ng-repeat="result in searchResults">{{result.title}}</li>
-    </ul>
+<div class="">
+    <select ng-model="selectedCountry"
+            ng-change="countryChanged()"
+            ng-options="country.countryName group by country.continentName for country in allCountries | orderBy:country.continentName">
+        <option value="">Select a country</option>
+    </select>
+    <div class="panel radius round" ng-show="selectedCountry">
+        <fieldset>
+            <legend>Earthquake Details for {{selectedCountry.countryName}}</legend>
+            <div class="row" ng-show="earthquakeInfoList.length">
+                <div class="medium-3 columns text-center">Date</div>
+                <div class="medium-2 columns text-center">Magnitude</div>
+                <div class="medium-2 columns text-center">Depth</div>
+                <div class="medium-2 columns text-center">Longitude</div>
+                <div class="medium-2 columns text-center">Latitude</div>
+            </div>
+            <div class="row" ng-repeat="earthquakeInfo in earthquakeInfoList">
+                <div class="row">
+                    <div class="medium-3 columns text-center">{{earthquakeInfo.datetime}}</div>
+                    <div class="medium-2 columns text-center">{{earthquakeInfo.magnitude}}</div>
+                    <div class="medium-2 columns text-center">{{earthquakeInfo.depth}}</div>
+                    <div class="medium-2 columns text-center">{{earthquakeInfo.lng}}</div>
+                    <div class="medium-2 columns text-center">{{earthquakeInfo.lat}}</div>
+                </div>
+            </div>
+            <div ng-show="!earthquakeInfoList.length">
+                No earthquake details available.
+            </div>
+        </fieldset>
+    </div>
 </div>
