@@ -30,7 +30,6 @@ angular.module('unittestApp')
           }
         })
         .error(function () {
-
           $scope.allCountries = [];
           angular.element('select option[value=""]').html('Error loading country list..');
         });
