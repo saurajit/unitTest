@@ -9,12 +9,6 @@
  */
 angular.module('unittestApp')
   .controller('geoNameSearchCtrl', ['$scope', 'geoNameService', function ($scope, geoNameService) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
     $scope.selectedCountry = undefined;
     $scope.allCountries = [];
     $scope.earthquakeInfoList = [];

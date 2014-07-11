@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: googleSearch', function () {
+describe('Service: geoNameService', function () {
 
   // load the service's module
   beforeEach(module('unittestApp'));
